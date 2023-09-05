@@ -1,0 +1,253 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    list-style-type:none;
+    text-decoration: none;
+}
+/* variable declarations */
+:root{
+    --main-color: goldenrod;
+    --color-dark:#1D2231;
+    --text-grey:black;
+}
+#save{
+    display: none;
+}
+.side-item{
+    display: flex;
+   flex-direction: column;
+    width: 345px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: 100;
+}
+.page{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+    margin-top: 10%;
+}
+.page img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%
+}
+.side-menu{
+    margin-top: 3rem
+}
+.side-menu li{
+width: 100%;
+margin-bottom: 1.3rem;
+padding-left: 2rem;
+}
+.side-menu a{
+    display: block;
+    padding-left: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.side-menu a.active:hover{
+    background: goldenrod;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color:white;
+    border-radius: 30px 0px 0px 30px;
+}
+.side-menu a.active:focus {
+    background: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--main-color);
+    border-radius: 30px 0px 0px 30px;
+    outline: none;
+}
+.side-menu a span:first-child{
+    font-size: 1.5rem;
+    padding-right: 1rem
+}
+.main-item{
+    margin-left: 345px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 90px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    position: fixed;
+    left: 345px;
+    width: calc(100% - 345px);
+    top: 0;
+    z-index: 100;
+}
+.search-bar{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 40px;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.search-bar span{
+    display: inline-block;
+    padding: 0rem .5rem;
+  font-size: .9rem;
+  color: var(--text-grey);
+}
+.search-bar input{
+    border: none;
+    outline: none;
+    padding: .5rem;
+    height: 80%;
+}
+.call-item a{
+    display: flex;
+    align-items: center;
+}
+.call-item a span{
+    font-size: 2.5em;
+    margin-right: 1rem;
+    color: var(--color-dark);
+}
+.em-list {
+    display: inline-block;
+color: var(--color-dark);
+}
+.user-condainer{
+    margin-top: 0px;
+    padding: 2rem 1.5rem;
+    min-height: calc(100vh - 90px);
+    display: flex;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#align-num{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ra-btn{
+    display: flex;
+}
+.name,.name_email{
+    padding: 1rem 2rem 1rem 0.8rem;
+    width: 25em;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0.5px solid #ccc;
+ }
+ .male .radio{
+    height: 16px;
+    width: 16px;
+ }
+ .male{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ form label{
+    font-size: 1.1em;
+ }
+#edit_button,
+#delete , #save{
+   width:15vh;
+   height: 5vh;
+   border-radius: 20px;
+   background-color:black;
+   color:white;
+   box-shadow: -15px 4px 16px -16px rgba(0,0,0,0.68);
+   margin-top: 20px;
+   border: none;
+}
+.edit_button{
+    display: flex;
+    justify-content: space-evenly;
+}
+#edit_button:hover,
+#delete:hover , #save:hover {
+   color: white;
+   background-color:goldenrod ;
+}
+.Appointment_Details {
+    background-color: #FFFFFF;
+    padding: 5%;
+    margin: 30px;
+    width: 350px;
+    background-color: #E9ECEF;
+    /* height: 250px; */
+}
+#my_session_page{
+    width:1000px ;
+}
+#my_session_page .expert_details  {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E2FDFF;
+    box-shadow: var(--box-shadow0);
+    width: auto;
+    margin: 5%;
+    padding: 3%;
+  }
+  .expert_details img{
+    width: 100px ;
+    border-radius: 50px;
+  }
+  .session_center{
+    text-align: center;
+  }
+  .upcoming_appoitment_list{
+    display: flex;
+    justify-content: space-around;
+    background-color: #219EBC;
+    padding: 7%;
+    margin: 5%;
+  }
+  .betw{
+    /* height: 100px; */
+    align-items: self-end;
+  }
+  .eventbox{
+    background-color: #A9DEF9;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  width: 90%;
+    justify-content: space-between ;
+    padding: 20px;
+    margin: 30px;
+    /* colo */
+    height: 300px;
+  }
+  .eventbox img{
+    height: 200px;
+    margin-right: 20px;
+  }
+  .eventbox p{
+    font-size: 20px;
+    align-items: center;
+  }
+  .event a{
+    text-decoration: none;
+  }
+  .eventbox:hover{
+    box-shadow: #888888 5px 2px;
+    transform: scale(1.02);
+  }

@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:wght@500&display=swap');
+
+ * {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+    cursor: pointer;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 8px 6px -6px rgb(207, 204, 204);
+  margin-top: 20px;
+}
+.nav_right{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 60px;
+  margin-top: 16px
+}
+/* ----------------Navigation bar----------------- */
+input[type=text] {
+  width: 450px;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  padding: 10px 20px;
+  margin: 8px 0;
+  outline: none;
+}
+.logo{
+    width: 120px;
+    position: relative;
+    bottom: 18px;
+    left: 20px;
+    cursor: pointer;
+    top: 1px;
+}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+ /* --------------------drop down--------------------- */
+ ul{
+  list-style-type: none;
+ }
+.dropdown {
+  position: relative;
+  bottom: 10px;
+  cursor: pointer;
+  /* display: inline-block; */
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  min-height: 300px;
+  box-shadow: rgba(222, 221, 221, 0.928) 0px 4px 18px 4px, rgba(211, 210, 210, 0.794) 0px 3px 0px;  background-color: white;
+  top: 40px;
+  border-radius: 8px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  top: 40px;
+}
+.dropdown-content a:hover {
+  border-radius: 8px;
+  font-size: 17px;
+  transform: translateZ(4px);
+  transition: 0.2s;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+   margin-top: 13px;
+}
+.border-1 {
+  width: 170px;
+  height: 1px;
+  background-color: rgba(165, 165, 165, 0.403);
+  position: relative;
+  left: 16px;
+  bottom: 10px;
+}
+body > nav > div.nav_right > ul > div > a:nth-child(2) > i{
+  margin-right: 10px;
+}
+body > nav > div.nav_right > ul > div > a:nth-child(6) > i{
+  margin-right: 10px;
+}
+body > nav > div.nav_right > ul > div > a:nth-child(4) > i{
+  margin-right: 10px;
+}
+body > nav > div.nav_right > ul > div > a:nth-child(1) > i{
+  margin-right: 10px;
+}
+ul{
+  list-style-type: none;
+ }
+.dropdown-1 {
+  position: relative;
+  bottom: 10px;
+  cursor: pointer;
+  /* display: inline-block; */
+}
+.dropdown-content-1 {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  min-height: 170px;
+  box-shadow: rgba(222, 221, 221, 0.928) 0px 4px 18px 4px, rgba(211, 210, 210, 0.794) 0px 3px 0px;  background-color: white;
+  top: 40px;
+  z-index: 1;
+  border-radius: 8px;
+}
+.dropdown-content-1 a {
+  color: black;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  top: 20px;
+}
+.dropdown-content-1 a:hover {
+  border-radius: 8px;
+  font-size: 17px;
+  transform: translateZ(4px);
+  transition: 0.2s;
+}
+.dropdown-1:hover .dropdown-content-1 {
+  display: block;
+   margin-top: 13px;
+}
+.border-1 {
+  width: 170px;
+  height: 1px;
+  background-color: rgba(209, 165, 8, 0.814);
+  position: relative;
+  left: 16px;
+  bottom: 30px;
+}.border-2 {
+  width: 170px;
+  height: 1px;
+  background-color: rgba(236, 180, 12, 0.819);
+  position: relative;
+  left: 16px;
+  bottom: 10px;
+}
+
+.sections{
+  background-color: goldenrod;
+  font-size: 20px;
+  position: relative;
+  height: 50px;
+}
+ul{
+  display: flex;
+  color: black;
+  font-weight: bold;
+  justify-content: center;
+}
+ul a li{
+  margin-top: 10px;
+  margin-left: 65px;
+}
+body > div > ul > li:nth-child(1),li:nth-child(2),li:nth-child(3),li:nth-child(4){
+  padding-right: 68px;
+  position: relative;
+  top: 5px;
+}
+
+/* -------------------cart card--------------------- */
+ .heading{
+    position: absolute;
+    top: 130px;
+    left: 130px;
+}
+.cart-leftcol{
+    margin-top: 30px;
+}
+.cartcontainer {
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    justify-content: space-evenly;
+   
+
+
+
+}
+
+.cart-content {
+    margin-left: 15px;
+    line-height: 25px;
+    /* margin-bottom: 40px; */
+    line-height: 30px;
+
+}
+
+.cart-details {
+    width: 550px;
+    height: 190px;
+    border: 1px solid rgb(185, 183, 183);
+    box-shadow: 5px 5px  20px #ccc;
+  
+}
+ 
+.cart-details {
+    display: flex;
+    align-items: center;
+}
+
+.shirt-name {
+    color: rgb(165, 164, 164);
+}
+
+.doller {
+    display: inline-block;
+}
+
+.del {
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.discount {
+    color:  rgba(143, 3, 3, 0.546);
+}
+
+.size {
+    width: 70px;
+    height: 26px;
+    background-color: rgb(236, 236, 232);
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+}
+
+.c1 {
+    display: block;
+}
+
+.price-container {
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgb(245, 244, 244);
+    box-shadow:  5px 7px 20px #ccc;
+    position: relative;
+    top: 20px;
+    bottom: 120px;
+}
+.buy{
+    width: 120px;
+    height: 30px;
+    background-color:rgb(231, 189, 84);
+    border: none;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    top: 15px;
+}
+.price{
+    /* text-align: center; */
+    font-size: 26px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    border-bottom: 1px solid goldenrod;
+    /* padding: 10px; */
+    /* margin-bottom: 40px; */
+}
+.gape{
+    margin: 30px 0;
+}
+.rate{
+    float: right;
+}
+.total{
+    font-size: 26px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    border-bottom: 1px solid goldenrod;
+    border-top: 1px solid goldenrod;
+    margin-top: 40px;
+    padding: 10px;
+}
+.price-details{
+    margin: 0 30px;
+}
+.order{
+    width: 200px;
+    height: 40px;
+    background-color:rgb(231, 189, 84);
+    color: black;
+    font-size: 19px;border: none;
+    position: relative;
+    top: 25px;
+    left: 70px; 
+
+}
+.order:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+.close{
+    position: relative;
+    left: 340px;
+    bottom: 120px;
+    color: black;
+  }

@@ -1,0 +1,124 @@
+body{
+    font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif;
+    margin: 0px;
+}
+   /* --------------------navbar--------------------------- */
+   .nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: goldenrod; 
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+
+ul li {
+    display: inline;
+    padding: 40px;
+    font-size: 21px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* --------------------drop down--------------------- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0c0101;
+    min-width: 160px;
+    box-shadow: 5px 10px 18px #888888;
+    top: 40px;
+    border-radius: 8px;
+  }
+  
+  .dropdown-content a {
+    color: rgb(246, 201, 4);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    border-radius: 8px;
+    font-size: 17px;
+    transform: translateZ(4px);
+    transition: 0.2s;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* ---------------------------aboutus ----------------- */
+.about-us-image{
+    background-image: linear-gradient(rgb(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)),url(../images/about1.jpg);
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: 50px;
+  }
+  .cover{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 115px;
+    right:160px ;
+  }
+.heading{
+    font-size: 50px;
+    font-weight: bold;
+}
+.we-are{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    bottom: 50px;
+
+}
+.arrow{
+    position: relative;
+    bottom: 50px
+}
+.about-container{
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about{
+    max-width: 500px;
+}
+.heading-2{
+    font-size: 55px;
+    font-weight: bold;
+}
+.we{
+    color: goldenrod;
+    margin-right: 10px;
+}
+.download{
+  width: 150px;
+  height: 40px;
+  background-color: goldenrod;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  position: relative;
+  top: 15px;
+}

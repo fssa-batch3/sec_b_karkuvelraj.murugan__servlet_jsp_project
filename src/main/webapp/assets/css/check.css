@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:wght@500&display=swap');
+
+*{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+   /* --------------------navbar--------------------------- */
+   .nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: goldenrod; 
+}
+
+.nav-links ul li a {
+    color: black;
+}
+
+
+ul li {
+    display: inline;
+    padding: 40px;
+    font-size: 21px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* --------------------drop down--------------------- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0c0101;
+    min-width: 160px;
+    box-shadow: 5px 10px 18px #888888;
+    top: 40px;
+    border-radius: 8px;
+  }
+  
+  .dropdown-content a {
+    color: rgb(246, 201, 4);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    border-radius: 8px;
+    font-size: 17px;
+    transform: translateZ(4px);
+    transition: 0.2s;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ /* check out page  */
+.heading{
+    font-size: 25px;
+    font-weight: bold;
+}
+.right-col-container{
+    width: 300px;
+    height: 750px;
+    box-shadow: 0px 0px 10px rgb(0,0,0,0.3);
+    border-radius: 20px;
+    position: relative;
+    right: 60px;
+    /* background-color: white; */
+
+}
+.email{
+    position: relative;
+    left: 50px;
+}
+s{
+    text-decoration: line-through;
+}
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right-col-content{
+    margin-left: 30px;
+}
+img{
+    border-radius: 10px;
+}
+.border{
+    width: 300px;
+    height: 1px;
+    background-color: black;
+    position: relative;
+    /* top: 20px; */
+    right: 30px;
+}
+.size, .color{
+    display: inline-block;
+    padding-right: 25px;
+}
+.rate{
+    position: relative;
+    left: 100px;
+}
+
+.btn-1{
+    width: 200px;
+    height: 40px;
+    border-radius: 60px;
+    color: white;
+    background-color: rgb(31, 110, 207);
+    border: none;
+   
+}
+.terms{
+    position: relative;
+    /* top: 40px; */
+    right: 15px;
+}
+
+
+
+/* -----------information-------------- */
+
+.left-col-container{
+    width: 900px;
+    height: 800px;
+    box-shadow: 0px 0px 10px rgb(0,0,0,0.3);
+    border-radius: 10px;
+
+
+}
+.left-col-content{
+   /* margin: 0 0 0 50px; */
+   position: relative;
+   top: 30px;
+   left: 20px;
+}
+label{
+    display: block;
+}
+.details{
+    display: grid;
+    grid-template-columns: auto auto ;
+    /* gap: 10px; */
+}
+input[type=text]{
+    width: 250px;
+  border-radius: 4px;
+  border: 3px solid rgb(220, 216, 216);
+  padding: 10px 20px;
+  margin: 8px 0;
+  outline: none; 
+}
+input[type=text]:focus {
+    background-color: #f5f8ff;
+  }
+input[type=name]{
+    width: 280px;
+  border-radius: 4px;
+  border: 3px solid rgb(220, 216, 216);
+  padding: 10px 20px;
+  margin: 8px 0;
+  outline: none; 
+}
+.first-name{
+    position: relative;
+    left: 50px; 
+}
+input[type=tel]{
+    width: 250px;
+    border-radius: 4px;
+    border: 3px solid rgb(220, 216, 216);
+    padding: 10px 40px;
+    margin: 8px 0;
+    outline: none; 
+}
+
+.tel{
+    position: relative;
+    left: 50px;
+}
+input[type=email]{
+    width: 250px;
+    border-radius: 4px;
+    border: 3px solid rgb(220, 216, 216);
+    padding: 10px 20px;
+    margin: 8px 0;
+    outline: none; 
+}
+.india-flag{
+    position: relative;
+    left: 60px;
+    top: 5px;
+}
+.tick{
+    position: relative;
+    left: 330px;
+    top: 5px; 
+}
+.store{
+    width: 140px;
+    height: 50px;
+    border: 2px solid #7ba2ff;
+    display: inline-block;
+    border-radius: 13px;
+    text-align: center;
+    position: relative;
+    left: 50px;
+    background-color: #f4f7ff;
+}
+
+.delivery{
+    width: 140px;
+    height: 50px;
+    border: 2px solid #7ba2ff;
+    display: inline-block;
+    border-radius: 13px;
+    text-align: center;
+    position: relative;
+    left: 70px;
+    background-color: #f4f7ff;
+} 
+.bottom{
+    position: relative;
+    left: 3px;
+    bottom: 12px;
+}
+input[type=date]{
+    width: 250px;
+    border-radius: 4px;
+    border: 3px solid rgb(220, 216, 216);
+    padding: 10px 20px;
+    margin: 8px 0;
+    outline: none; 
+}
+input[type=time]{
+    width: 250px;
+    border-radius: 4px;
+    border: 3px solid rgb(220, 216, 216);
+    padding: 10px 20px;
+    margin: 8px 0;
+    outline: none; 
+}
+.details-2{
+    display: grid;
+    grid-template-columns: auto auto ;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+.details-3{
+   display: flex;
+   justify-content: space-evenly;
+   position: relative;
+   top: 50px;
+   padding-right:20px ;
+
+}
+input[type=address]{
+    width: 170px;
+    border-radius: 4px;
+    border: 3px solid rgb(220, 216, 216);
+    padding: 10px 20px;
+    margin: 8px 0;
+    outline: none; 
+}
+input[type=number]{
+    width: 170px;
+    border-radius: 4px;
+    border: 3px solid rgb(220, 216, 216);
+    padding: 10px 20px;
+    margin: 8px 0;
+    outline: none; 
+}
+input[type=select]{
+    width: 170px;
+    border-radius: 4px;
+    border: 3px solid rgb(220, 216, 216);
+    padding: 10px 20px;
+    margin: 8px 0;
+    outline: none; 
+}
+.paytm{
+    width: 140px;
+    height: 50px;
+    border: 2px solid #7ba2ff;
+    display: inline-block;
+    border-radius: 13px;
+    text-align: center;
+    position: relative;
+    left: 50px;
+    background-color: #f4f7ff;
+}
+.phonepay{
+    width: 140px;
+    height: 50px;
+    border: 2px solid #7ba2ff;
+    display: inline-block;
+    border-radius: 13px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    background-color: #f4f7ff;
+}
+.gpay{
+    width: 140px;
+    height: 50px;
+    border: 2px solid #7ba2ff;
+    display: inline-block;
+    border-radius: 13px;
+    text-align: center;
+    position: relative;
+    left: 80px;
+    background-color: #f4f7ff;
+}
+.others{
+    width: 140px;
+    height: 50px;
+    border: 2px solid #7ba2ff;
+    display: inline-block;
+    border-radius: 13px;
+    text-align: center;
+    position: relative;
+    left: 120px;
+    background-color: #;
+}
+.payment{
+    position: relative;
+    top: 30px;
+    padding-right: 20px;
+}
+.logo-middle{
+    position: relative;
+    top: 5px;
+}
+.checkpage-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
