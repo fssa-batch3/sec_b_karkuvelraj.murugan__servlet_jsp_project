@@ -2,6 +2,7 @@ package in.fssa.aaha.servlets;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,34 +29,36 @@ public class UpdateProductServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		int productId = Integer.parseInt(request.getParameter("id"));
-		Product product = new Product();
-		String name = request.getParameter("name");
-		String description = request.getParameter("product_Description");
-		int productPrice = Integer.parseInt(request.getParameter("price"));
-		int category = Integer.parseInt(request.getParameter("product_category"));
-//		String image_url = request.getParameter("image_url");
-//		int price = Integer.parseInt(request.getParameter("price"));
-
-		product.setName(name);
-		product.setDescription(description);
-		product.setCategory_id(category);
-		
-		Price price = new Price();
-		price.setPrice(productPrice);
-		product.setPrice(price);
-		
-//		int priceValue = price.getPrice();
-//		product.setPrice(priceValue);
 	
+		int productId = Integer.parseInt(request.getParameter("id"));
+
+		String name = request.getParameter("name");
+		String description = request.getParameter("description");
+//		System.out.println(request.getParameter("price"));
+		int productPrice = Integer.parseInt(request.getParameter("price").trim());
+
 		ProductService productService = new ProductService();
+
+		Product product = new Product();
+		product.setDescription(description);
+		product.setName(name);
+
+		   Price price = new Price();
+			price.setPrice(productPrice);
+			product.setPrice(price);
+		
 		PrintWriter out = response.getWriter();
 
 		
 		try {
-			productService.update(productId, product);
+			
+			productService.update(productId, product);	
+			
+			
+			
 			out.println("Product updated successfully");
-			response.sendRedirect(request.getContextPath() + "/");
+			
+			response.sendRedirect(request.getContextPath() + "/product");
 			
 		} catch (ServiceException e) {
 			e.printStackTrace();

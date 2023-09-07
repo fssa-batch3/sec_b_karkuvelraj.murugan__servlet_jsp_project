@@ -9,6 +9,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import in.fssa.aaha.exception.ServiceException;
+import in.fssa.aaha.exception.ValidationException;
 import in.fssa.aaha.model.Product;
 import in.fssa.aaha.service.ProductService;
 @WebServlet("/product")
@@ -18,12 +21,18 @@ public class ListAllProductServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		ProductService productService = new ProductService();
-		List<Product> ProductList = productService.ListAllProducts();
-		
-		request.setAttribute("product", ProductList);
-		
-		RequestDispatcher requestDispatch = request.getRequestDispatcher("productlist.jsp");
-		requestDispatch.forward(request, response);
+		List<Product> ProductList;
+		try {
 
+			ProductList = productService.ListAllProducts();
+            request.setAttribute("product", ProductList);		
+			RequestDispatcher requestDispatch = request.getRequestDispatcher("/productlist.jsp");
+			requestDispatch.forward(request, response);
+		} catch (ServiceException | ValidationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
 	}
 }

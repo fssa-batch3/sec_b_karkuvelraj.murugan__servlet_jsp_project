@@ -65,7 +65,7 @@
 			<td><%=products.getId()%></td>
 			<td><%=products.getName()%></td>
 			<td><%=products.getDescription()%></td>
-			<td><%=products.getPrice()%></td>
+			<td><%=products.getPrice().getPrice() %></td>
 			<td><a href="product/view?id=<%=products.getId()%>"><button type="submit">View</button></a>
 			<td><a href="product/edit?id=<%=products.getId()%>"><button type="submit">Update</button></a></td>
 			<td><a href="product/delete?id=<%=products.getId()%>"><button type="submit">Delete</button></a></td>

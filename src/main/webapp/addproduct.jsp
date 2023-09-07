@@ -49,6 +49,21 @@
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+  
+   select {
+      width: 230px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    /* Style the option elements */
+    option {
+      background-color: #3498db;
+      color: #ffffff;
+      font-size: 14px;
+    }
   textarea {
     height: 100px;
   }
@@ -67,24 +82,25 @@
 </style>
 </head>
 <body>
+
   <div class="container">
+  
     <h2>Add Product</h2>
     
 	<form action="create" method="post">
 		<label>Product Name:</label>
-		 <input type="text" name="name"
+		 <input value="Blue" type="text" name="name"
 			required="true"> 
 			<label>Product Description:</label> 
 			<input
-			type="text" name="product_Description" required="true">
+			type="text" value="Men Regular Fit Solid Spread Collar Formal Shirt" name="product_Description" required="true">
 			 <label for="product_category">Product Category:</label>
 <select name="product_category" id="product_category" required="true">
     <option value="1">MEN</option>
     <option value="2">WOMEN</option>
     <option value="3">KIDS</option>
- 
-</select>
- <label>Price:</label> <input type="number"
+  </select>
+ <label>Price:</label> <input value="499" type="number"
 			name="price" required> 
 			<label>Image URL:</label> <input
 			type="url" name="image_url" required>
@@ -94,3 +110,9 @@
   </div>
 </body>
 </html>
+
+
+
+
+
+

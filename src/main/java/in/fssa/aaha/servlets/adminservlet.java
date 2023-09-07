@@ -22,5 +22,4 @@ public class adminservlet extends HttpServlet {
 		requestDispatch.forward(request, response);
 	}
 
-
 }

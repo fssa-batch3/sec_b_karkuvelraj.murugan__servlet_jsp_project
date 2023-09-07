@@ -21,17 +21,23 @@ import in.fssa.aaha.service.ProductService;
 public class EditProductServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		int id = Integer.parseInt( request.getParameter("product_id") );
+		System.out.println(request.getParameter("id"));
+		int id = Integer.parseInt( request.getParameter("id"));
 		
 		try {
-			Product product = new ProductService().findById(id);
+		      
+
+			ProductService service = new ProductService();
+			
+			
+			Product product =service.findById(id);
+			
+			System.out.println("product==>"+product);
+			
+			
 			request.setAttribute("product", product);
 			RequestDispatcher rd = request.getRequestDispatcher("/productupdate.jsp");
 			rd.forward(request, response);

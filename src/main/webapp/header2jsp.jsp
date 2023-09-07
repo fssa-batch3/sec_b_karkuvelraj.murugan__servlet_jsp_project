@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+
 <style>
     *{
     font-family: 'Noto Sans', sans-serif;
@@ -173,10 +174,6 @@ ul{
      
   
 }
-.home{
-  position:relative;
-  bottom:6px;
-}
 
 
 .sections{
@@ -201,67 +198,9 @@ body > div > ul > li:nth-child(1),li:nth-child(2),li:nth-child(3),li:nth-child(4
 </style>
 </head>
 <body>
-     <nav class="nav-container">
-        <div>
-            <img class="logo" src="./assets/images/logo1.png"  alt="logo">
-        </div>
-            <div class="nav_right">
-
-                
-                <ul class="dropdown-1">
-                    <li>
-                        <h3 class="Category">Categories</h3>                        
-
-                    </li>
-
-                    <div class="dropdown-content-1">
-                        <a href="#"> 
-                            Men</a>
-                        <a href="#"> Women 
-                        </a>
-                        <div class="border-1"></div>
-
-                        <a href="#">Kids </a>
-
-                        <div class="border-1"></div>
-
-                    </div>
-                </ul>
-                <div class="search"><input type="text" name="searchbar" id="search_bar"></div>
-
-                <ul class="dropdown">
-                    <li>
-                        <img src="./assets/images/avatar6.png" alt="Avatar" class="avatar"> 
-
-                    </li>
-
-                    <div class="dropdown-content">
-                        <a href="#"> <i class="fa fa-user"></i>
-                            Profile</a>
-                        <a href="#"> <i class="fa fa-shopping-cart"></i>Cart 
-                        </a>
-                        <div class="border-2"></div>
-
-                        <a href="#"> <i class="fa fa-heart"></i>Wishlist </a>
-
-                        <div class="border-2"></div>
-
-                        <a href="#"> <i class="fa fa-shopping-bag"></i>My Orders
-                        </a>
-                        <div class="border-2"></div>
-
-                        <a href="#">Signout</a>
-                        <div class="border-2"></div>
-
-                    </div>
-                </ul>
-            </div>
-        
-                          
-    </nav>
     <div class="sections">
         <ul>
-                 <li><a class ="home" href="index.jsp"><button class="btn" type="submit" value="Submit">Home</button></a></li>
+            <li><a class ="admin" href="index.jsp"><button class="btn" type="submit" value="Submit">Home</button></a></li>
             <li>Men</li>
             <li>Women</li>
             <li>Kids</li>

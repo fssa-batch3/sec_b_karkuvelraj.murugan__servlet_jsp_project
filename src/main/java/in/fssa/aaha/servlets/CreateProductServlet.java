@@ -37,10 +37,8 @@ public class CreateProductServlet  extends HttpServlet {
 		
 		Price price = new Price();
 		price.setPrice(productPrice);
+
 		product.setPrice(price);
-		
-//		int priceValue = price.getPrice();
-//		product.setPrice(priceValue);
 	
 		ProductService productService = new ProductService();
 		PrintWriter out = response.getWriter();
@@ -48,7 +46,6 @@ public class CreateProductServlet  extends HttpServlet {
 		try {
 
 			productService.create(product);
-			out.println("Product created successfully");
 			response.sendRedirect(request.getContextPath() + "/product");
 
 		} catch (ServiceException | ValidationException e) {

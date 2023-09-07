@@ -112,11 +112,11 @@
                     <div class="login-page">
                         <h1 class="site-name">ADMIN</h1>
                         <form role="form">
-                            <input id="email" class="mail" type="name" placeholder="Email address">
-                            <input id="password" class="password" type="password" placeholder="Password">
-                            
+                            <input id="email" class="mail" type="name" placeholder="Admin name">
+                            <input id="password" class="password" type="password" placeholder="Admin Password">
+           
                         </form>
-                        <a href="product/new"><button class ="login" type="submit" value="Submit">Login</button></a>
+                        <a href="product"><button class ="login" type="submit" value="Submit">Login</button></a>
                         
                     </div>
                 </section>
