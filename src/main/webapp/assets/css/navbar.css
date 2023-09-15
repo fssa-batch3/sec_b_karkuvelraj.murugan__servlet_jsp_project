@@ -24,9 +24,9 @@
   height: 40px;
   border-radius: 10px;
   border: 3px solid #ccc;
-  margin: 8px 0;
   outline: none;
-  margin-top: 20px;
+   position:relative;
+    left:240px;
 }
 .logo{
     width: 120px;
@@ -41,6 +41,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    position:relative;
+    left:200px;
   }
  /* --------------------drop down--------------------- */
  ul{
@@ -67,6 +69,7 @@
   top: 40px;
   border-radius: 8px;
   z-index: 1;
+  left:120px;
 }
 .dropdown-content a {
   color: black;
@@ -75,7 +78,7 @@
   text-decoration: none;
   display: block;
   position: relative;
-  top: 40px;
+  top: 30px;
 }
 .dropdown-content a:hover {
   border-radius: 8px;

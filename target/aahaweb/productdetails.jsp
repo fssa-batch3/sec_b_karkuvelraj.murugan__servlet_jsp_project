@@ -7,84 +7,94 @@
 <meta charset="UTF-8">
  <link rel="icon" type="image/x-icon" href="https://iili.io/J9HTxWb.png">
 <title>Product Details</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5;
-        margin: 0;
-        padding: 0;
-    }
-    .container {
-        width: 80%;
-        margin: 20px auto;
-        background-color: #fff;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        padding-botton:50px;
-        height:100%;
-    }
-    .header {
-        background-color: green;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-    }
-    .product-details {
-        display: flex;
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
 
-        align-items: flex-start;
-        padding: 50px 20px;
-        width:80%;
-        
-    }
-    img {
-        width: 450px;
-        height: 400px;
-        margin-right: 20px;
-    }
-    .product-info {
-        margin-left:6vw;
-        
-    }
-    .product-name {
-        font-size: 35px;
-        font-weight: bold;
-        color:#5e6f22;
-            margin-top: 100px;
-    }
-    .description {
-        margin-top: 20px;
-         font-size: 25px;
-         width:500px;
-    }
-    .buy-button {
-        margin-top: 20px;
-        
-    }
-    .description {
-        margin-top: 5vh;
-           margin-left:6vw;
-           width:80%;
-    }
-  
-</style>
+        header {
+            background-color: goldenrod;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .product-container {
+            max-width: 300px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-title {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .product-description {
+            margin: 10px 0;
+        }
+
+        .product-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .product-button:hover {
+            background-color: #555;
+        }
+      .btn{
+    background-color: goldenrod;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color:black;
+    
+    
+  }
+  .btn:hover{
+      
+     background-color: darkgoldenrod;
+  }
+    </style>
 </head>
 <body>
-<% Product product = (Product) request.getAttribute("productDetails"); %>
-  
-    <table border="1">
-        <tr>
-            <th>Product Name</th>
-            <th>Price</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td><%= product.getName() %></td>
-            <td><%= product.getPrice() %></td>
-            <td><%= product.getDescription() %></td>
-        </tr>
-    </table> 
-      <div class="button-container">
-			<a href=""><button class="button edit" type="submit" value="Submit">BUY NOW</button></a>
-        </div>
+    <header>
+        <h1>PRODUCT DETAIL PAGE</h1>
+    </header>
+    <% Product products = (Product) request.getAttribute("productDetails"); %>
+
+    <div class="product-container">
+        <img class="product-image" src="product-image.jpg" alt="Product Image">
+        <h2><%= products.getName() %></h2>
+        <h4><span style="font-size: 15px;">&#8377;</span><%= products.getPrice().getPrice() %></h4>
+        <h4 ><%= products.getDescription() %></h4>
+         <a href="/product/edit?id=<%=products.getId()%>"><button class="btn" type="submit">Edit</button></a>
+	    <a href="/product/delete?id=<%=products.getId()%>"><button class="btn" type="submit">Delete</button></a>
+        
+    </div>
 </body>
 </html>

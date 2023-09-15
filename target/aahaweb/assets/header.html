@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <title>Header</title>
+</head>
+<body>
+ 
+    `<nav class="nav-container">
+        <div>
+        <a href="${logo_path}"><img class="logo" src="${logo}"  alt="logo"></a>
+        
+        </div>
+            <div class="nav_right">
+                <ul class="dropdown-1">
+                    <li>
+                        <h3 class="Category"><a href="${admin}">Admin</a></h3>
+                    </li>
+                </ul>
+                <ul class="dropdown-1">
+                <li>
+                    <h3 class="Category"><a href="${about}">About</a></h3>
+                </li>
+            </ul>
+                <input type="text" class="search" name="searchbar" id="search_bar">
+
+                <ul class="dropdown">
+                    <li>
+                        <img src="${avatar}" alt="Avatar" class="avatar"> 
+                    </li>
+                    <div class="dropdown-content">
+                        <a href="${profile}"> <i class="fa fa-user"></i>
+                            Profile</a>
+                        <a href="${cart1}"> <i class="fa fa-shopping-cart"></i>Cart 
+                        </a>
+                        <div class="border-2"></div>
+
+                        <a href="${wishlist}"> <i class="fa fa-heart"></i>Wishlist </a>
+
+                        <div class="border-2"></div>
+
+                        <a href="${wishlist}"> <i class="fa fa-shopping-bag"></i>My Orders
+                        </a>
+                        <div class="border-2"></div>
+
+                        <a href="#"><p onclick="logout()">Signout</p></a>
+                        <div class="border-2"></div>
+
+                    </div>
+                </ul>
+            </div>
+                          
+    </nav>
+    
+    <div class="sections">
+        <ul>
+        <a href="${logo_path}"><li>Home</li></a>
+        <a href="${men}"><li>Men</li></a>
+        <a href="${women}"><li>Women</li></a>
+        <a href="${kids}"><li>Kids</li></a>
+        </ul>
+    </div>`;
+
+const before_login = ` <nav class="nav-container">
+<div>
+    <img class="logo" src="${logo}"  alt="logo">
+</div>
+    <div class="nav_right">
+
+        
+    <ul class="dropdown-1">
+    <li>
+        <h3 class="Category"><a href="${admin}">Admin</a></h3>
+    </li>
+</ul>
+<ul class="dropdown-1">
+<li>
+    <h3 class="Category"><a href="${about}">About</a></h3>
+</li>
+</ul>
+<div ><input class="search"  name="searchbar" id="search_bar"></div>
+
+<ul class="dropdown">
+    <li>
+        <img src="${avatar}" alt="Avatar" class="avatar"> 
+
+    </li>
+
+            <div class="dropdown-content">
+                <a href="${signup}"> <i class="fa fa-user"></i>
+                    Sign up</a>
+                    <a href="${signin}"> <i class="fa fa-user"></i>
+                    Log in</a>
+            </div>
+        </ul>
+    </div>
+                  
+</nav> 
+<div class="sections">
+<ul>
+
+<a href="${logo_path}"><li>Home</li></a>
+<a href="${men}"><li>Men</li></a>
+<a href="${women}"><li>Women</li></a>
+<a href="${kids}"><li>Kids</li></a>
+</ul>
+</div> `
+</body>
+</html> 

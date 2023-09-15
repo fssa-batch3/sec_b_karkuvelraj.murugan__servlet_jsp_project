@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans&family=Sarabun:wght@500&display=swap');
+*{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.change_btn{
+ display: inline-block;
+ float: right;
+ position: relative;
+ top: 8px;
+ right: 20px;
+ border:0.5px solid black ;
+ width: 80px;
+ height: 40px;
+ border-radius: 5px;
+ background-color: black;
+ color: goldenrod;
+}
+.address_container{
+   width: 450px;
+    height: 180px;
+    border: 0.5px solid rgb(213, 213, 207);
+    background-color: rgb(249, 249, 249);
+    margin-bottom: 100px;
+
+}
+.address_container h2{
+    display: inline-block;
+    position: relative;
+    left: 10px;
+}
+body > section > div > h2,p{
+    position: relative;
+    left: 10px;
+}
+
+.address_content{
+    margin-top: 20px;
+}
+.price-container {
+    width: 480px;
+    height: 400px;
+    position: relative;
+    right: 100px;
+    border: 1px solid rgb(245, 244, 244);
+    box-shadow:  5px 7px 20px #ccc;
+}
+.buy{
+    width: 120px;
+    height: 30px;
+    background-color:rgb(231, 189, 84);
+    border: none;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    top: 15px;
+}
+.price{
+    /* text-align: center; */
+    font-size: 26px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    border-bottom: 1px solid goldenrod;
+    padding: 10px;
+     margin-bottom: 40px;
+}
+.gape{
+    margin: 30px 0;
+}
+.rate{
+    float: right;
+}
+.total{
+    font-size: 26px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    border-bottom: 1px solid goldenrod;
+    border-top: 1px solid goldenrod;
+    margin-top: 40px;
+    padding: 10px;
+}
+.price-details{
+    margin: 0 30px;
+}
+.order{
+    width: 170px;
+    height: 37px;
+    /* background-color:rgb(231, 189, 84); */
+    color: black;
+    font-size: 19px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    left: 130px;
+}
+.order:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+.close{
+    position: relative;
+    left: 340px;
+    bottom: 120px;
+    color: black;
+  }
+  .order_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }.address_heading{
+    display: flex;
+    position: relative;
+    left: 200px;
+    top: 30px;
+  }
+  .add{
+    margin-top: 60px;
+  }
+  /* .address_heading .add_address{
+    margin-left: 175px;
+  } */

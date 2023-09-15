@@ -1,0 +1,91 @@
+*{
+    
+    font-family: PlusJakartaSans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Helvetica Neue,Ubuntu,sans-serif;
+}
+body{
+    background-image: url(../images/circle-scatter-haikei\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+}
+
+.contact-container{
+    width: 1500px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.contact-content{
+    margin-left: 20px;
+}
+.heading{
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 30px;
+}
+.heading-2{
+    position: relative;
+    left: 50px;
+    bottom: 10px;
+}
+input{
+    display: block;
+}
+.we{
+    color: black;
+}
+input[type=text]{
+    width: 550px;
+  border-radius: 4px;
+  padding: 10px 20px;
+  border: none;
+  margin: 8px 0;
+  outline: none; 
+  box-shadow: 5px 5px 10px rgb(0,0,0,0.1);
+}
+input[type=email]{
+    width: 550px;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-shadow: 5px 5px 18px rgb(0,0,0,0.1);
+  outline: none; 
+  border: none; 
+}
+textarea{
+    width: 550px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none; 
+    outline: none;
+    box-shadow: 5px 5px 18px rgb(0,0,0,0.1);
+
+}
+.submit{
+    display: block;
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: goldenrod;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.submit:hover{
+    background-color: goldenrod;
+    color: black;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.our-partner{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 340px;
+}
+.right-col-container{
+    position: relative;
+    right: 50px;
+}

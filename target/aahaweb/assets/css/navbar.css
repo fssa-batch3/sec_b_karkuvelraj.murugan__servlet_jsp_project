@@ -1,13 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-
-<style>
-    *{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans&family=Sarabun:wght@500&display=swap');
+*{
     font-family: 'Noto Sans', sans-serif;
 
 }
@@ -18,7 +10,6 @@
   margin-top: 20px;
 
 }
-
 .nav_right{
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -28,13 +19,14 @@
 }
 
 /* ----------------Navigation bar----------------- */
-input[type=text] {
-  width: 450px;
+.search{
+  width: 400px;
+  height: 40px;
   border-radius: 10px;
   border: 3px solid #ccc;
-  padding: 10px 20px;
-  margin: 8px 0;
   outline: none;
+   position:relative;
+    left:240px;
 }
 .logo{
     width: 120px;
@@ -42,17 +34,25 @@ input[type=text] {
     bottom: 18px;
     left: 20px;
     cursor: pointer;
-    top: 1px;
+  
 }
 .avatar {
     vertical-align: middle;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    position:relative;
+    left:200px;
   }
  /* --------------------drop down--------------------- */
  ul{
   list-style-type: none;
+ }
+ ul a{
+  padding-left: 50px;
+  margin-top: 5px;
+  text-decoration: none;
+  color: black;
  }
 .dropdown {
   position: relative;
@@ -69,6 +69,7 @@ input[type=text] {
   top: 40px;
   border-radius: 8px;
   z-index: 1;
+  left:120px;
 }
 .dropdown-content a {
   color: black;
@@ -77,7 +78,7 @@ input[type=text] {
   text-decoration: none;
   display: block;
   position: relative;
-  top: 40px;
+  top: 30px;
 }
 .dropdown-content a:hover {
   border-radius: 8px;
@@ -97,6 +98,9 @@ input[type=text] {
   position: relative;
   left: 16px;
   bottom: 10px;
+}
+.dropdown-1{
+  margin-top: 20px;
 }
 body > nav > div.nav_right > ul > div > a:nth-child(2) > i{
   margin-right: 10px;
@@ -165,15 +169,7 @@ ul{
   left: 16px;
   bottom: 10px;
 }
-.btn{
-     background-color: goldenrod;
-     border:none;
-     font-size:19px;
-     font-weight: bold;
-     margin-top:5px;
-     
-  
-}
+
 
 
 .sections{
@@ -195,18 +191,3 @@ body > div > ul > li:nth-child(1),li:nth-child(2),li:nth-child(3),li:nth-child(4
   top: 5px;
 
 }
-</style>
-</head>
-<body>
-    <div class="sections">
-        <ul>
-            <li><a class ="admin" href="index.jsp"><button class="btn" type="submit" value="Submit">Home</button></a></li>
-            <li>Men</li>
-            <li>Women</li>
-            <li>Kids</li>
-            <a class ="admin" href="admin"><button class="btn" type="submit" value="Submit">Admin</button></a> 
-            
-        </ul>
-    </div>
-</body>
-</html>

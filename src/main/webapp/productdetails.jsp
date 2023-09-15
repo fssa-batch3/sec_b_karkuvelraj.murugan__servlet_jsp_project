@@ -92,8 +92,8 @@
         <h2><%= products.getName() %></h2>
         <h4><span style="font-size: 15px;">&#8377;</span><%= products.getPrice().getPrice() %></h4>
         <h4 ><%= products.getDescription() %></h4>
-         <a href="edit?id=<%=products.getId()%>"><button class="btn" type="submit">Edit</button></a>
-	    <a href="delete?id=<%=products.getId()%>"><button class="btn" type="submit">Delete</button></a>
+         <a href="/product/edit?id=<%=products.getId()%>"><button class="btn" type="submit">BUY</button></a>
+	    <a href="/product/delete?id=<%=products.getId()%>"><button class="btn" type="submit">CART</button></a>
         
     </div>
 </body>

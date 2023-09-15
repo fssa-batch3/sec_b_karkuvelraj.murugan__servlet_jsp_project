@@ -1,0 +1,137 @@
+/* ---------------------------signup page------------------------------
+.signup-container {
+  width: 700px;
+  height: 600px;
+  border: 1px solid black;
+  position: relative;
+  left: 25%;
+  top: 130px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.signup-content {
+  background-color: goldenrod;
+  position: relative;
+  right: 29px;
+  width: 300px;
+}
+
+.otp {
+  width: 300px;
+  height: 130px;
+  border: 1px solid white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  top: 240px;
+  right: 60px;
+
+}
+.form-control  input:valid{
+  border: 2px solid green;
+}
+.form-control  input:focus{
+  border: 2.5px solid red;
+}
+.signup-para {
+  position: relative;
+  top: 130px;
+  left: 60px;
+}
+
+.signup-content h1 {
+  position: relative;
+  left: 60px;
+  top: 120px;
+}
+
+.signup-image {
+  position: relative;
+  top: 200px;
+  left: 50px;
+}
+
+/* .otp p {
+  height: 40px;
+  text-align: center;
+}
+
+.otp .request-otp {
+  position: relative;
+  top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 7px;
+
+}
+
+.request-otp p {
+  position: relative;
+  top: 10px;
+}
+
+.otp .have-account {
+  background-color: orangered;
+} */
+
+.have-account p {
+  position: relative;
+  top: 10px;
+  color: white;
+}
+
+
+
+
+/* .signup-form input[type=mail] {
+  display: block;
+  position: relative;
+  top: 110px;
+  height: 35px;
+  width: 280px;
+  right: 75px;
+  border: 1px solid rgb(121, 120, 120);
+  outline: none;
+  padding: 14px;
+  font-size: 12px;
+  
+  border-top: white;
+  border-left: white;
+  border-right: white;
+} */
+
+.signup-form input[type=password] {
+  display: block;
+  position: relative;
+  top: 110px;
+  height: 35px;
+  width: 280px;
+  right: 75px;
+  border: 1px solid rgb(121, 120, 120);
+  outline: none;
+  padding: 14px;
+  font-size: 12px;
+  
+  border-top: white;
+  border-left: white;
+  border-right: white;
+}
+
+.or-1 {
+  position: relative;
+  top: 11px;
+}
+
+.signup-form h2 {
+  position: relative;
+  top: 80px;
+}
+
+.inputs {
+  margin-left: 30px;
+}
+
+.signup-form {
+  position: relative;
+  left: 50px;
+} 

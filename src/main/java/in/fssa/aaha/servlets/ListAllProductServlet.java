@@ -14,25 +14,36 @@ import in.fssa.aaha.exception.ServiceException;
 import in.fssa.aaha.exception.ValidationException;
 import in.fssa.aaha.model.Product;
 import in.fssa.aaha.service.ProductService;
+
 @WebServlet("/product")
 public class ListAllProductServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		ProductService productService = new ProductService();
-		List<Product> ProductList;
-		try {
 
-			ProductList = productService.ListAllProducts();
-            request.setAttribute("product", ProductList);		
-			RequestDispatcher requestDispatch = request.getRequestDispatcher("/productlist.jsp");
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String category = request.getParameter("category");
+
+		ProductService productService = new ProductService();
+		try {
+			List<Product> productList;
+			if (category != null) {
+				int categoryId = Integer.parseInt(request.getParameter("category"));
+
+				productList = productService.listAllTheProductsByCategoryId(categoryId);
+
+				for (Product product : productList) {
+					System.out.println(product);
+				}
+			} else {
+				productList = productService.ListAllProducts();
+			}
+			request.setAttribute("product", productList);
+			RequestDispatcher requestDispatch = request.getRequestDispatcher("/productlistuser.jsp");
 			requestDispatch.forward(request, response);
 		} catch (ServiceException | ValidationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+
 	}
 }

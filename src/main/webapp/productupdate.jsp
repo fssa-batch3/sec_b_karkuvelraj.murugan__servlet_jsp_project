@@ -123,11 +123,9 @@ button[type="submit"]:hover {
 		
 		
 		
-	<%-- 	href="product?id==<%=product.getId()%>  --%>
 	</form>
 	
 	</div>
 
 </body>
 </html>
->

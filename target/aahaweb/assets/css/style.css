@@ -1,0 +1,828 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:wght@500&display=swap');
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sarabun', sans-serif;
+  cursor: pointer;
+} 
+
+/* -----------product details-------------- */
+.product-details {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  align-content: center;
+}
+
+.del {
+  text-decoration: line-through;
+}
+
+.doller {
+  display: inline-block;
+  position: relative;
+  right: 2px;
+}
+
+.details {
+  position: relative;
+  right: 120px;
+  bottom: 50px;
+}
+
+.discount {
+  color: rgb(179, 154, 17);
+}
+.pant-review{
+  position: relative;
+  top: 12px;
+}
+.order {
+  width: 220px;
+  height: 50px;
+  border-radius: 7px;
+  border: 1px solid goldenrod;
+  background-color: goldenrod;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+/* -------------------cart button------------------------ */
+.cart {
+  width: 220px;
+  height: 50px;
+  border-radius: 7px;
+  border: 1px solid goldenrod;
+  background-color: black;
+  color: goldenrod;
+  font-size: 18px;
+  position: relative;
+  right: 30px;
+}
+
+.gape  {
+  position: relative;
+  top: 28px;
+  right: 20px;
+  padding: 22px;
+  display: inline-block;
+}
+.gape1{
+  display: inline-block;
+  position: relative;
+  top: 28px;
+  right: 20px;
+  padding: 22px;
+}
+.gape2{
+  display: inline-block;
+  position: relative;
+  top: 28px;
+  right: 20px;
+  padding: 22px;
+
+}
+
+.gold img {
+  border-radius: 9px;
+}
+
+.saree-gold {
+  position: relative;
+  left: 20px;
+}
+.saree-gold img{
+  border-radius: 6px;
+
+}
+
+.gold img:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.gape:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.gape1:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.gape2:hover{
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.details h1 {
+  position: relative;
+  right: 6px;
+}
+
+.details h3 {
+  position: relative;
+  right: 6px;
+}
+
+.details .rating {
+  width: 40px;
+  height: 25px;
+  border: 1px solid rgb(130, 130, 130);
+  border-radius: 8px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  right: 6px;
+}
+
+.details h3 {
+  margin: 16px 0;
+}
+
+.details .doller {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.rating-star {
+  margin-top: 10px;
+  font-size: 24px;
+  color: goldenrod;
+  margin-right: 1px;
+}
+
+.arrow {
+  font-size: 20px;
+  position: relative;
+  left: 60px;
+}
+
+.shopping {
+  position: relative;
+  left: 20px;
+  font-size: 24px;
+  color: white;
+  z-index: 10;
+}
+.rate{
+  position: relative;
+  top: 7px;
+}
+.gold-pant {
+  position: relative;
+  left: 70px;
+  top: 70px;
+}
+
+.size {
+  display: inline-block;
+  border: 1px solid rgb(150, 148, 148);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+}
+
+.size p {
+  position: relative;
+  top: 10px;
+}
+
+.size:hover {
+  border: 2px solid goldenrod;
+  transform: scale(1.1);
+}
+
+.size-container {
+  padding: 10px;
+}
+
+.details h5 {
+  position: relative;
+  top: 7px;
+}
+
+strong p {
+  /* border-bottom: 3px solid gold;
+  width: 120px; */
+  margin-top: 15px;
+}
+
+.product-brand {
+  position: relative;
+  left: 41px;
+  color: gray;
+}
+
+.product-category {
+  position: relative;
+  left: 18px;
+  color: gray;
+
+}
+
+.product-color {
+  position: relative;
+  left: 46px;
+  color: gray;
+
+}
+
+/* --------------first page------------- */
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 1300px;
+  margin-top: 50px;
+  margin-left: 90px;
+  height: 500px;
+  box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(211, 211, 211, 0.331);
+  
+}
+
+.hero .left-col-hero p {
+  margin: 40px 0;
+  position: relative;
+    right: 65px;
+}
+
+.hero .left-col-hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.my-button {
+  background-color: black; /* Set background color */
+  border-radius: 5px;
+  border: none; /* Remove border */
+  color: white; /* Set text color */
+  padding: 8px 27px; /* Set padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove text decoration */
+  display: inline-block; /* Make it an inline-block element */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Change cursor to pointer */
+  transition-duration: 0.4s; /* Add transition */
+}
+
+.my-button:hover {
+  background-color: goldenrod; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+}
+/* ------------button----------- */
+.btn {
+  width: 250px;
+  height: 50px;
+  border-radius: 7px;
+  border: 1px solid goldenrod;
+  background-color: goldenrod;
+}
+
+/* ---------button end---------- */
+.offers {
+  height: 20vh;
+  display: flex;
+  border: 1px solid black;
+  height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  background-image: url(../images/symbol-scatter-haikei\ \(1\).png);
+  /* linear-gradient(rgb(7,34,7,0.5),rgb(7,34,7,0.4)), */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offers .free {
+  position: relative;
+  left: 15px;
+}
+
+.offers a {
+  position: relative;
+  left: 11px;
+}
+
+.offers h2 {
+  color: goldenrod;
+}
+
+/* ------------------trending products page------------------------- */
+.heading {
+  height: 15vh;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+
+/* -------------------card section----------------------------- */
+
+
+.card-content .shoe-type {
+  margin: 10px 0;
+}
+
+.shoe-review {
+  position: relative;
+  top: 10px;
+}
+
+.shirt-review {
+  position: relative;
+  top: 10px;
+}
+
+.card-container-2 {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 50px;
+}
+
+
+.card-2 {
+  width: 320px;
+  height: 400px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 5px 7px 20px rgba(145, 145, 145);
+
+  /* border: 1.5px solid rgb(242, 238, 238); */
+  /* background-color: rgb(249, 249, 249); */
+}
+
+.card-content .rate {
+  position: relative;
+  top: 10px;
+}
+
+.card-content .type {
+  position: relative;
+  top: 8px;
+}
+
+.card-content .review {
+  position: relative;
+  top: 13px;
+}
+
+
+/* ---------------------loginpag--------------------- */
+
+.login-content {
+  width: 400px;
+  height: 470px;
+  border: 2px solid rgb(231, 224, 224);
+  position: relative;
+  left: 550px;
+  top: 160px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(249, 249, 249);
+}
+
+.login {
+  display: block;
+  height: 35px;
+  width: 280px;
+  position: relative;
+  top: 130px;
+  right: 75px;
+  background-color: goldenrod;
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  border: 0.5px solid rgb(161, 159, 159);
+  border-radius: 6px;
+}
+
+.mail {
+  display: block;
+  position: relative;
+  top: 110px;
+  height: 35px;
+  width: 280px;
+  right: 75px;
+  border-radius: 6px;
+  border: 1px solid rgb(121, 120, 120);
+  outline: none;
+  padding: 14px;
+  font-size: 12px;
+}
+
+.password {
+  display: block;
+  height: 35px;
+  width: 280px;
+  position: relative;
+  right: 75px;
+  top: 120px;
+  border-radius: 6px;
+  border: 1px solid rgb(121, 120, 120);
+  outline: none;
+  padding: 14px;
+  font-size: 12px;
+
+}
+
+.site-name {
+  position: relative;
+  top: 70px;
+}
+
+.login-page {
+  position: relative;
+  left: 140px;
+}
+
+.or {
+  position: relative;
+  top: 145px;
+  left: 45px;
+}
+
+.g-logo {
+  position: relative;
+  top: 160px;
+  right: 50px;
+}
+
+.google {
+  position: relative;
+  top: 130px;
+  right: 18px;
+  color: black;
+}
+
+.login-page h5 {
+  position: relative;
+  top: 140px;
+  right: 18px;
+  color: black;
+}
+
+.sign-up {
+  position: relative;
+  top: 100px;
+  right: 50px;
+}
+
+/* ---------------------------signup page------------------------------ */
+.signup-container {
+  width: 700px;
+  height: 600px;
+  border: 1px solid black;
+  position: relative;
+  left: 25%;
+  top: 130px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.signup-content {
+  background-color: goldenrod;
+  position: relative;
+  right: 29px;
+  width: 300px;
+}
+
+.otp {
+  width: 300px;
+  height: 130px;
+  position: relative;
+  top: 240px;
+  right: 60px;
+}
+.signup-para {
+  position: relative;
+  top: 130px;
+  left: 60px;
+}
+
+.signup-content h1 {
+  position: relative;
+  left: 60px;
+  top: 120px;
+}
+
+.signup-image {
+  position: relative;
+  top: 200px;
+  left: 50px;
+}
+
+.otp p {
+  height: 40px;
+  text-align: center;
+}
+
+.otp .request-otp {
+  position: relative;
+  top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 7px;
+
+}
+
+.request-otp p {
+  position: relative;
+  top: 10px;
+}
+
+.otp .have-account {
+  background-color: orangered;
+}
+.otp p .btn1 {
+  width: 250px;
+  height: 50px;
+  border-radius: 7px;
+  border: 1px solid goldenrod;
+  background-color: goldenrod;
+}
+.have-account p {
+  position: relative;
+  top: 10px;
+  color: white;
+}
+
+.signup-form input[type=text] {
+  display: block;
+  position: relative;
+  top: 110px;
+  height: 35px;
+  width: 280px;
+  right: 75px;
+  border: 1px solid rgb(121, 120, 120);
+  outline: none;
+  padding: 14px;
+  font-size: 12px;
+  position: relative;
+  top: 150px;
+  border-top: white;
+  border-left: white;
+  border-right: white;
+}
+
+.signup-form input[type=mail] {
+  display: block;
+  position: relative;
+  top: 110px;
+  height: 35px;
+  width: 280px;
+  right: 75px;
+  border: 1px solid rgb(121, 120, 120);
+  outline: none;
+  padding: 14px;
+  font-size: 12px;
+  position: relative;
+  top: 165px;
+  border-top: white;
+  border-left: white;
+  border-right: white;
+}
+
+.signup-form input[type=password] {
+  display: block;
+  position: relative;
+  top: 110px;
+  height: 35px;
+  width: 280px;
+  right: 75px;
+  border: 1px solid rgb(121, 120, 120);
+  outline: none;
+  padding: 14px;
+  font-size: 12px;
+  position: relative;
+  top: 180px;
+  border-top: white;
+  border-left: white;
+  border-right: white;
+}
+
+.or-1 {
+  position: relative;
+  top: 11px;
+}
+
+.signup-form h2 {
+  position: relative;
+  top: 80px;
+}
+
+.inputs {
+  margin-left: 30px;
+}
+
+.signup-form {
+  position: relative;
+  left: 50px;
+}
+
+/* --------------------------------footer--------------------------------- */
+.sign-up {
+  top: 180px;
+  color: black;
+}
+
+.footer_container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40vh;
+  margin-top: 80px;
+  background-color: rgb(7, 3, 3);
+  box-shadow: 5px 5px 7px rgb(232, 230, 230);
+  
+}
+.footer_logo{
+  position: relative;
+  bottom: 40px;
+  left: 210px;
+}
+.middle{
+  position: relative;
+  right: 80px;
+  text-align: center;
+  color: white;
+}
+body > footer > div:nth-child(1) > h4:nth-child(1),h4:nth-child(2),h4:nth-child(3){
+  display: inline-block;
+  padding-left: 26px;
+}
+.f-1,.f-2{
+  color: white;
+}
+.f-1{
+  font-weight: bold;
+}
+/* .footer-content {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+  position: relative;
+  top: 200px;
+  color: goldenrod;
+  background-image: url(../images/wave-haikei\ \(4\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.footer-content h4 {
+  margin-top: 50px;
+
+}
+
+.men h4 {
+  border-bottom: 2px solid white;
+  width: 40px;
+  position: relative;
+  line-height: 30px;
+}
+
+.women h4 {
+  border-bottom: 2px solid white;
+  width: 60px;
+  position: relative;
+  line-height: 30px;
+}
+
+.kids h4 {
+  border-bottom: 2px solid white;
+  width: 40px;
+  position: relative;
+  line-height: 30px;
+}
+
+.social-media h4 {
+  border-bottom: 2px solid white;
+  width: 60px;
+  position: relative;
+  line-height: 30px;
+}
+
+.footer-content p {
+  margin-top: 20px;
+} */
+
+
+
+
+/* ---------------------RESPONSIVE-------------------- */
+
+@media only screen and (max-width: 500px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .card-container-2 {
+    flex-direction: column;
+  }
+  .card{
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  .card-2{
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  .navbar .nav-items .logo{
+    width: 90px;
+    margin-bottom: 20px;
+  }
+  .nav-items{
+    position: relative;
+    right: 36px;
+  }
+  .navbar .nav-items input[type=text] {
+    width: 170px;
+    position: relative;
+    left:90px ;
+    bottom: 90px;
+  }
+  .search{
+    position: relative;
+    bottom: 90px;
+    left: 55px;
+  }
+  .hero{
+    display: unset;
+    flex-direction: row;
+  }
+  .hero img{
+    width: 360px;
+  }
+
+  .hero .left-col-hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .hero .left-col-hero p {
+    text-align: center;
+  }
+  .btn{
+    margin-left: 80px;
+  }
+  .right-col-hero{
+     width: 260px;
+     margin-left: 20px;
+     margin-top: 30px;
+  }
+
+  .border-1 , .border-2 , .border-3{
+     display: none;
+  }
+  .offers h2{
+     font-size: 16px;
+  }
+  .offers{
+    background-color: black;
+    background-image: url(../images/black.jpg);
+  }
+  i {
+    font-size: 16px;
+
+  }
+  .nav-container{
+    display: none;
+    
+  }
+  .hero{
+    box-shadow: none;
+  }
+  .footer-content {
+  
+    background-image: url(../images/black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ .social-media , .kids-1{
+    display: none;
+  }
+  .kids{
+    margin-left: 30px;
+  }
+  .icon .c1{
+    display: none;
+  }
+  .fa-regular, .far {
+    font-size: 30px;
+    position: relative;
+    bottom: 12px;
+  }
+}
+#des_details{
+  max-width: 480px;
+}
