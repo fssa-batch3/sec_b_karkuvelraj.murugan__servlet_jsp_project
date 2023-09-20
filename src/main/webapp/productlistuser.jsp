@@ -121,7 +121,9 @@ margin-top: 60px;
     transition: 0.3s;
     transform: scale(1.1);
   }
-
+ .product-container{
+    display:flex;
+ }
 </style>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
@@ -134,10 +136,38 @@ margin-top: 60px;
       <%	List<Product> product = (List<Product>) request.getAttribute("product");
        %>
     <section class="product-container">
+     <div class="filter-container">
+            <h4 class="brand">BRAND</h4>
+            <div class="border-1"></div>
+            <input type="search" name="search" id="" placeholder="search brand">
+            <p><input type="checkbox" name="" id=""><span for="">Wolver</label></p>
+            <p><input type="checkbox" name="" id=""><span for="">ADIDAS</label></p>
+            <p><input type="checkbox" name="" id=""><span for="">PUMA</label></p>
+            <p><input type="checkbox" name="" id=""><span for="">BLACKNIGHT</label></p>
+            <p><input type="checkbox" name="" id=""><span for="">Chheent</label></p>
+            <p><input type="checkbox" name="" id=""><span for="">UNIQUELLO</label></p>
+            <div class="border-1"></div>
+            <h4 class="brand">CAUSTOMER RATING</h4>
+            <p><input type="checkbox" name="" id=""><span for="">4&#9733&above</label></p>
+            <p><input type="checkbox" name="" id=""><span for="">3&#9733&above</label></p>
+            <div class="border-1"></div>
+
+            <p><input type="checkbox" name="" id=""><span for="">BUY MORE</label></p>
+            <p><input type="checkbox" name="" id=""><span for="">SPECIAL OFFERS</label></p>
+            <p><input type="checkbox" name="" id=""><span for="">NO CAST EMI</label></p>
+                <h4 class="brand">COLOR</h4>
+
+            <p><input type="color"  value="#ff0000" name="" id=""><span class="color" for="">RED</label></p>
+            <p><input type="color"  value="#0000ff" name="" id=""><span class="color" for="">DARK BLUE</label></p>
+            <p><input type="color"  value="#ffff00" name="" id=""><span class="color" for="">YELLOW</label></p>
+            <p><input type="color"  value="#ff00ff" name="" id=""><span class="color" for="">PINK</label></p>
+            <p><input type="color"  value="#800080" name="" id=""><span class="color"  for="">PURPLE</label></p>
+            <p><input type="color"  value="#add8e6" name="" id=""><span class="color" for="">LITE BLUE</label></p>
+        </div>
       <% for(Product products : product){ %>
         <div class="card">
           <div class="card-content">
-            <img src="" alt="shirt" width="260px" height="350px">
+            <img src=" <%= products.getImage()%>" alt="shirt" width="260px" height="350px">
             <div class="card-title">
             </div>
           </div>
@@ -145,6 +175,7 @@ margin-top: 60px;
             <div class="detail-container">
               <h3 class="prodname"><%= products.getName() %></h3>
               <p class="price"><span style="font-size: 15px;">&#8377;</span><%= products.getPrice().getPrice()%> </p>
+               <p class="size">Size:<%= products.getSize()%></p>
             </div>
           <div class="btn-cont">
             <a href="product/details?id=<%=products.getId()%>"><button class="buy"  type="submit">Details</button></a>
@@ -152,6 +183,7 @@ margin-top: 60px;
           </div>
         </div>
         <%} %>
+        
       </section>
 </body>
 </html>

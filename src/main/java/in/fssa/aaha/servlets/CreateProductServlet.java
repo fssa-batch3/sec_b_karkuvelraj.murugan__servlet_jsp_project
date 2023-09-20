@@ -28,24 +28,27 @@ public class CreateProductServlet  extends HttpServlet {
 		String description = request.getParameter("product_Description");
 		int productPrice = Integer.parseInt(request.getParameter("price"));
 		int category = Integer.parseInt(request.getParameter("product_category"));
-//		String image_url = request.getParameter("image_url");
-//		int price = Integer.parseInt(request.getParameter("price"));
+		String image_url = request.getParameter("image_url");
+		String size = request.getParameter("product_Size");
 
 		product.setName(name);
 		product.setDescription(description);
 		product.setCategory_id(category);
-		
+		product.setImage(image_url);
+		product.setSize(size);
 		Price price = new Price();
 		price.setPrice(productPrice);
 
 		product.setPrice(price);
-	
+		
+	System.out.println(product);
 		ProductService productService = new ProductService();
 		PrintWriter out = response.getWriter();
 
 		try {
 
 			productService.create(product);
+			// /aahaweb/product
 			response.sendRedirect(request.getContextPath() + "/product");
 
 		} catch (ServiceException | ValidationException e) {

@@ -5,7 +5,7 @@
 <head>
    <link rel="stylesheet" href="<%=request.getContextPath()%>/assets/css/style.css">
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Aaha</title>
 
 </head>
 <body>
@@ -16,7 +16,7 @@
                 <div>Lowest price</div>
                 <h1>Best Quality</h1>
                 <p>
-                    Welcome to  <strong>AAHA</strong> Shopping 
+                    Welcome to  <strong>AAHA</strong> Shopping
                 </p>
                 <button class="btn">Welcome....!</button>
             </div>

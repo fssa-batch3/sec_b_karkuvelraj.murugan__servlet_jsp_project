@@ -20,6 +20,4 @@ public class NewProductServlet extends HttpServlet {
 		requestDispatch.forward(request, response);
 	}
 
-
-
 }
