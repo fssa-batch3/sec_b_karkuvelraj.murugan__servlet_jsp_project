@@ -9,8 +9,9 @@
   
 </head>
 <body>
-   <%  String id = (String) session.getAttribute("userId");
+   <%  Integer id = (Integer) request.getSession().getAttribute("userId");
    
+  
 	if (id != null) {
 	%>
           <nav class="nav-container">

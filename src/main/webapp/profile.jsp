@@ -47,7 +47,7 @@
 			<!-- This is profile update section-->
 			<div class="user-condainer">
 				<div class="information boxes">
-					<form role="form" onsubmit="eprofile_details(event)">
+					<form action="editprofile" method="Get" role="form" onsubmit="eprofile_details(event)">
 						<div class="first-name" id="align-num">
 							<label class="more"> </label> <input class="name"
 								id="user_name" type="text" pattern="[A-Za-z]{1,32}"
@@ -95,17 +95,15 @@
 								name="user address" placeholder="Pincode">
 						</div>
 						<div class="edit_btns">
-							<button id="edit_button" onclick="myfunc()">Edit</button>
-							<button id="save" type="submit">Save</button>
-							<button id="delete">Delete</button>
+						<a href="edit/profile?id=<%=user.getId()%>"><button id="edit_button" onclick="myfunc()">Edit</button></a>
+      	                <a href="delete/user?id=<%=user.getId()%>"><button id="delete" type="submit">Delete</button></a>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-	</div>
-	</div>
+
 
 	<script src="./usercrud.js"></script>
 	<script>
