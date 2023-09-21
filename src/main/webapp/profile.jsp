@@ -95,7 +95,7 @@
 								name="user address" placeholder="Pincode">
 						</div>
 						<div class="edit_btns">
-						<a href="edit/profile?id=<%=user.getId()%>"><button id="edit_button" onclick="myfunc()">Edit</button></a>
+						<a href="edit/profile"><button id="edit_button" >Edit</button></a>
       	                <a href="delete/user?id=<%=user.getId()%>"><button id="delete" type="submit">Delete</button></a>
 						</div>
 					</form>

@@ -2,7 +2,6 @@
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.lang.System.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,37 +17,52 @@ import in.fssa.aaha.service.UserService;
 /**
  * Servlet implementation class UpdateUserServlet
  */
-@WebServlet("/updateprofile")
+@WebServlet("/user_dashboard/profile/update")
 public class UpdateUserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		String loggedUserUniqueEmail = (String) request.getSession().getAttribute("LOGGEDUSER");
-		try {
-			User userDetails = new UserService().findByEmail(loggedUserUniqueEmail);
-			int userId = userDetails.getId();
-			String name = request.getParameter("name");
-			long phoneNumber = Long.parseLong(request.getParameter("phone"));
-
-			UserService userService = new UserService();
-			User newUser = new User();
-			PrintWriter out = response.getWriter();
-			newUser.setUserName(name);
-			newUser.setPhoneNumber(phoneNumber);
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-			userService.updateUser(newUser);
-
-			out.println("User updated successfully");
-			response.sendRedirect(request.getContextPath() + "/profile.jsp");
-		} catch (ServiceException | ValidationException e) {
+		try {
+			
+			//Instance
+			User user = new User();
+			
+			//Mobile number
+			long phonenumber =  Long.parseLong(request.getParameter("number"));
+			user.setPhoneNumber(phonenumber);
+		
+			//Password
+//			user.setPassword(request.getParameter("password"));
+			
+			//FirstName
+			user.setUserName(request.getParameter("name"));
+			
+			UserService userService = new UserService();
+			
+			String idParams = request.getParameter("userId");
+			
+			int id = Integer.parseInt(idParams);
+			
+			userService.updateUser(user);
+			//System.out.println(id);
+			response.sendRedirect("/globalfuncityweb/user_dashboard/profile");
+			
+	   }  catch (ValidationException e) {
 			e.printStackTrace();
-			throw new ServletException(e);
-		}
-	}
+			PrintWriter consoleOutput = new PrintWriter(System.out);
+			consoleOutput.println(e.getMessage());
+			
+		} catch (ServiceException e) {
+			e.printStackTrace();
+			PrintWriter consoleOutput = new PrintWriter(System.out);
+			consoleOutput.println(e.getMessage());
+		} 
+		 catch (NumberFormatException e) {
+			e.printStackTrace();
+			PrintWriter consoleOutput = new PrintWriter(System.out);
+			consoleOutput.println(e.getMessage());
+	    }
 
+}
 }

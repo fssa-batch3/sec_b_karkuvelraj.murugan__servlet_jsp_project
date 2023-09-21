@@ -21,24 +21,28 @@ import in.fssa.aaha.service.UserService;
 @WebServlet("/edit/profile")
 public class EditUserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+       
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		Integer id = (Integer) request.getSession().getAttribute("userId");
-		try {
-			User userDetails = new UserService().findById(id);
-			request.setAttribute("userDetail", userDetails);
-			RequestDispatcher dispatcher = request.getRequestDispatcher("/profile_details.jsp");
-			dispatcher.forward(request, response);
-		} catch (ServiceException | ValidationException e) {
-			e.printStackTrace();
-			throw new ServletException(e);
-		}
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		int userId = (Integer) request.getSession().getAttribute("userId");
+
+		 UserService userService = new UserService();
+	        try {
+	        	User user = userService.findById(userId);
+	        	if(user!= null) {
+				request.setAttribute("user", user);
+				RequestDispatcher rd = request.getRequestDispatcher("/UserUpdate.jsp");
+				rd.forward(request, response);
+	        	} else {
+	        		response.sendError(HttpServletResponse.SC_NOT_FOUND, "USER NOT FOUND");
+	        	}
+			} catch (NumberFormatException | ValidationException | ServiceException e) {
+				e.printStackTrace();
+			} 
+	  
+
+	
+		
 	}
-
 }
