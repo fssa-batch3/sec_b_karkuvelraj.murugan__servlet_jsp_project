@@ -1,6 +1,21 @@
 package in.fssa.aaha.servlets;
+
 import java.io.IOException;
 
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import in.fssa.aaha.dao.UserDAO;
+import in.fssa.aaha.exception.DAOException;
+import in.fssa.aaha.exception.ServiceException;
+import in.fssa.aaha.exception.ValidationException;
+import in.fssa.aaha.model.User;
+import in.fssa.aaha.model.UserEntity;
+import in.fssa.aaha.service.UserService;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -23,9 +38,7 @@ public class UserSigninServlet extends HttpServlet {
 			throws ServletException, IOException {
 
 		String email = request.getParameter("email");
-		System.out.println("email" + email);
 		String password = request.getParameter("password");
-		System.out.println(password);
 
 		UserService userService = new UserService();
 
@@ -36,18 +49,17 @@ public class UserSigninServlet extends HttpServlet {
 			if (userId > 0) {
 				request.getSession().setAttribute("userId", userId);
 				
-				response.sendRedirect(request.getContextPath() + "/profile.jsp");
+				  System.out.print(userId);
+				 
+				response.sendRedirect(request.getContextPath() + "/index.jsp");// inga index page ku ponum
+			} else {
+				throw new ValidationException("email and password not validate");
 			}
-//			} else {
-//				String errorMessage = "?error=" + "Invalid email or password";
-//				response.sendRedirect(request.getContextPath() + "/login" + errorMessage);
-//			}
 
 		} catch (ValidationException | ServiceException e) {
 //			String errorMessage = "?error=" + e.getMessage();
-			response.sendRedirect(request.getContextPath() + "/login.jsp" );
+			response.sendRedirect(request.getContextPath() + "/login.jsp");
 			e.printStackTrace();
 		}
 	}
 }
-
